@@ -19,3 +19,20 @@ console.log({ distanceNumber });
 //3) Validare che il numero non sia NaN
 
 
+//4) Calcolare il prezzo del biglietto senza sconti (km * 0.21€)
+
+const priceFull = distanceNumber * price;
+console.log({ priceFull });
+
+//5) Chiedere l'età del passeggero
+
+const age = prompt('Inserisci la tua età');
+console.log({ age });
+
+//6) Trasformare la stringa in numero
+
+const ageNumber = parseInt(age);
+console.log({ ageNumber });
+
+//7) Validare che il numero non sia NaN
+
