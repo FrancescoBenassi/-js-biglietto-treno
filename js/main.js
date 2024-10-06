@@ -36,3 +36,21 @@ console.log({ ageNumber });
 
 //7) Validare che il numero non sia NaN
 
+/*8) Applicare lo sconto in base all'età
+  9) Se il passeggero è minorenne avrà uno sconto del 20% altrimenti 
+se è over 65 avrà uno sconto del 40% altrimenti se non è minorenne e neanche over 65 non avrà nessun sconto */
+
+if (ageNumber > over) {
+  const priceSalesOver = priceFull - (priceFull * salesOver);
+  console.log(priceSalesOver);
+  const costSalesOver = `Il costo del biglietto è ${priceSalesOver.toFixed(2)}`;
+  console.log(costSalesOver);
+} else if (ageNumber < under) {
+  const priceSalesUnder = priceFull - (priceFull * salesUnder);
+  console.log(priceSalesUnder);
+  const costSalesUnder = `Il costo del biglietto è ${priceSalesUnder.toFixed(2)}`;
+  console.log(costSalesUnder);
+} else {
+  const costFull = `Il costo del biglietto è ${priceFull.toFixed(2)}`;
+  console.log(costFull);
+}
